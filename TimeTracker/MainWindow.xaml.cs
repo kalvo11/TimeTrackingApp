@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace TimeTracker
 {
@@ -20,6 +7,20 @@ namespace TimeTracker
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void CloseMainWindow()
+        {
+            MessageBoxResult MsgResult = MessageBox.Show("Sind Sie sicher, dass Sie Beenden wollen?", "Frage", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (MsgResult == MessageBoxResult.Yes)
+            {
+                Close();
+            }
+        }
+
+        private void CloseClick(object sender, RoutedEventArgs e)
+        {
+            CloseMainWindow();
         }
     }
 }

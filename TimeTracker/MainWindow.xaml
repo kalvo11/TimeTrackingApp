@@ -19,7 +19,7 @@
     <Grid>
         <Menu IsMainMenu="True" DockPanel.Dock="Top">
             <MenuItem Header="Datei">
-                <MenuItem Header="Beenden"/>
+                <MenuItem Header="Beenden" Click="CloseClick"/>
             </MenuItem>
         </Menu>
 
