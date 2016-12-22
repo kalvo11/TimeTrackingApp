@@ -29,7 +29,7 @@
             HorizontalAlignment="Left" 
             Margin="183,255,0,0"
             VerticalAlignment="Top" 
-            Width="115"/>
+            Width="115" Click="btnWorkStartStop_Click"/>
         <Label 
             x:Name="lblWorkedToday" 
             Content="Heute gearbeitet: 0 Stunden 0 Minuten" 
@@ -44,9 +44,9 @@
             VerticalAlignment="Top"/>
         <Label
             x:Name="lblActiveSessionDuration"
-            Content="0 Stunden 0 Minuten"
+            Content="0 Stunden 0 Minuten 0 Sekunden"
             HorizontalAlignment="Left"
-            Margin="176, 210, 0, 0"
+            Margin="140, 210, 0, 0"
             VerticalAlignment="Top"/>
         <Label 
             x:Name="lblThisMonth"
